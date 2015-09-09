@@ -1,0 +1,83 @@
+.flip-container:hover .flipper,  
+.flip-container.hover .flipper {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	    width: 130px;
+	    height: 150px;
+}
+
+.flipper {
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+  
+    -o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+
+}
+
+.front, .back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+    background: #a8bdb9;
+	z-index: 2;
+}
+
+.back {
+        background: #8a9593;
+    	-webkit-transform: rotateY(180deg);
+	    -moz-transform: rotateY(180deg);
+        -o-transform: rotateY(180deg);
+	    transform: rotateY(180deg);
+}
+
+.first-block>span {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    outline: none;
+}
+
+.first-block>.data {
+    text-align: center;
+    color: #fff;
+    font: 14px sans-serif;
+    outline: none;
+}
+
+.first-block-back>.data {
+    text-align: center;
+    outline: none;
+    color: #fff;
+    font: 14px sans-serif;
+}
+
+.first-block-back>.grades {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    font: 40px sans-serif;
+}

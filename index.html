@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Weather-TO-GO</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-weather-block.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+               <div id="logo">
+                <a href="#"><img src="images/wtg.png" width="300px" height="182px" alt="LOGO"></a>
+                </div>
+                <nav>
+                    <ul id="top-menu">
+                        <li><a><label for="search">SEARCH</label></a></li>
+                        <li id="weather-your"><a onclick=window.location.reload(false); href="#block-weather" >WEATHER IN YOUR LOCATION</a></li>
+                        <li><a href="#contact" onclick="return anchorScroller(this)">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="home">
+                <h1><b>Take the weather with you</b></h1>
+                <form id="form-search">
+                    <input type="search" name="search" placeholder="Please, enter a name of the city" id="search" autocomplete="off"/>
+                     <button type="button" id="button-search" value="Get Weather">
+                     <a id="lupo-search" href="#block-weather" onclick="return anchorScroller(this)"></a>
+                        <img src="images/lupo.png" width="30" height="30" alt="lupo"/>
+                    </button> 
+                </form>
+            </div>
+            <aside>
+                <p id="block-weather"><a name="block-weather"></a></p>
+                <figure>
+                    <p id="city"></p><br>
+                    <p id="big-block-data"></p>
+                    <span id="icon0"></span>
+                    <p id="big-block-grades"></p>
+                    <p id="weather-condition"></p>
+                </figure>
+                <table>
+               <tr>
+                <td><div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                        <div class="first-block">
+                        <p id="data1" class="data"></p>
+                            <span id="icon1"></span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="first-block-back">
+                                <p id="data1-back" class="data"></p>
+                                <p id="grades1" class="grades"></p>
+                            </div>
+                        </div>
+                    </div>
+                    </div></td>
+                <td><div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                        <div class="first-block">
+                        <p id="data2" class="data"></p>
+                            <span id="icon2"></span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="first-block-back">
+                                <p id="data2-back" class="data"></p>
+                                <p id="grades2" class="grades"></p>
+                            </div>
+                        </div>
+                    </div>
+                    </div></td>
+                <td><div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                        <div class="first-block">
+                        <p id="data3" class="data"></p>
+                            <span id="icon3"></span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="first-block-back">
+                                <p id="data3-back" class="data"></p>
+                                <p id="grades3" class="grades"></p>
+                            </div>
+                        </div>
+                    </div>
+                    </div></td>
+                <td><div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                        <div class="first-block">
+                        <p id="data4" class="data"></p>
+                            <span id="icon4"></span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="first-block-back">
+                                <p id="data4-back" class="data"></p>
+                                <p id="grades4" class="grades"></p>
+                            </div>
+                        </div>
+                    </div>
+                    </div></td>
+                <td><div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                        <div class="first-block">
+                        <p id="data5" class="data"></p>
+                            <span id="icon5"></span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="first-block-back">
+                                <p id="data5-back" class="data"></p>
+                                <p id="grades5" class="grades"></p>
+                            </div>
+                        </div>
+                    </div>
+                    </div></td>
+                              </tr>
+               <tr>
+                <td><div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                        <div class="first-block">
+                        <p id="data6" class="data"></p>
+                            <span id="icon6"></span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="first-block-back">
+                                <p id="data6-back" class="data"></p>
+                                <p id="grades6" class="grades"></p>
+                            </div>
+                        </div>
+                    </div>
+                    </div></td>
+                <td><div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                        <div class="first-block">
+                        <p id="data7" class="data"></p>
+                            <span id="icon7"></span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="first-block-back">
+                                <p id="data7-back" class="data"></p>
+                                <p id="grades7" class="grades"></p>
+                            </div>
+                        </div>
+                    </div>
+                    </div></td>
+                <td><div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                        <div class="first-block">
+                        <p id="data8" class="data"></p>
+                            <span id="icon8"></span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="first-block-back">
+                                <p id="data8-back" class="data"></p>
+                                <p id="grades8" class="grades"></p>
+                            </div>
+                        </div>
+                    </div>
+                    </div></td>
+                <td><div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                        <div class="first-block">
+                        <p id="data9" class="data"></p>
+                            <span id="icon9"></span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="first-block-back">
+                                <p id="data9-back" class="data"></p>
+                                <p id="grades9" class="grades"></p>
+                            </div>
+                        </div>
+                    </div>
+                    </div></td>
+                <td><div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+                    <div class="flipper">
+                        <div class="front">
+                        <div class="first-block">
+                        <p id="data10" class="data"></p>
+                            <span id="icon10"></span>
+                            </div>
+                        </div>
+                        <div class="back">
+                            <div class="first-block-back">
+                                <p id="data10-back" class="data"></p>
+                                <p id="grades10" class="grades"></p>
+                            </div>
+                        </div>
+                    </div>
+                    </div></td>
+                              </tr>
+                </table>
+            </aside>
+            <section>
+                <p id="contact"><a name="contact"></a></p>
+                <p id="contactUS">Contact Us</p>
+                <form id="con-form">
+                    <input type="text" name="name" placeholder="Your Name" id="name"><br>
+                    <input type="text" name="email" placeholder="Email address" id="email"><br>
+                    <textarea type="text" name="message" placeholder="Your message" id="message"></textarea><br>
+                    <button id="send-message">SEND MESSAGE</button>
+                </form>
+            </section>
+            <footer>
+                <p>2015.Marko Sozansky</p>
+            </footer>
+        </div>
+        <script src="scripts/jquery-2.1.4.js"></script>
+        <script src="scripts/moment.js"></script>
+        <script src="scripts/weatherService.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/weatherByCity.js"></script>
+        <script src="scripts/AnchorScroller.js"></script>
+    </body>
+</html>
